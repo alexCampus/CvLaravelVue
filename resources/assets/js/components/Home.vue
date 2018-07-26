@@ -104,6 +104,7 @@
           max-height: 750px;
           padding-bottom: 1%;
           margin-bottom: 3%;
+          margin-left: 0.5%;
       }
   }
 </style>

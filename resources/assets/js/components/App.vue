@@ -1,7 +1,7 @@
 <template>
   <div id="site">
     <NavBar @clicked="onClickChild" @lang='getLang' class="isNavBar"></NavBar>
-    <NavBarTabs @clicked="onClickChild" class="isNavBarTabs"></NavBarTabs>
+    <NavBarTabs @clicked="onClickChild" @lang='getLang' class="isNavBarTabs"></NavBarTabs>
     <home :getLang="lang"></home>
     <transition
       enter-active-class="animated zoomInLeft"
@@ -94,7 +94,7 @@ export default {
   @media screen and (max-width: 1024px) {
     #site  {
       margin-left: -1%;
-      /*max-width: 100%;*/
+      max-width: 100%;
       max-height: 900px;
       display: block;
       margin-top: 0%;
