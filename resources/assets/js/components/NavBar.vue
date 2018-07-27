@@ -1,8 +1,9 @@
 <template>
   <div class="navBar">
+    <select-lang @lang="getLang"></select-lang>
     <b-nav vertical>
       <b-nav-item>
-        <select-lang @lang="getLang"></select-lang>
+        <!--<select-lang @lang="getLang"></select-lang>-->
       </b-nav-item>
       <b-nav-item @click="isActive('home')">
         <b-button :class="{'w-100' : true, 'bgColor': true , 'actif': this.isActif['home']}">{{ $t("navBar.home", lang) }}</b-button>
@@ -61,7 +62,7 @@ export default {
     min-width: 19%;
   }
  .bgColor {
-   border:none;
+    border:none;
     background-color: #08aeac;
    -webkit-transition: ease-out 0.5s;
    -moz-transition: ease-out 0.5s;

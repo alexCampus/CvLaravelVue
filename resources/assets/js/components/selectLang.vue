@@ -1,10 +1,12 @@
 <template>
     <div class="locale-changer">
-        <span class="custom-dropdown">
-        <select v-model="$i18n.locale" v-on:input="changeLang($event.target.value)">
-            <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">{{ lang }}</option>
-        </select>
-            </span>
+        <b-form-group label="Langage">
+            <b-form-radio-group id="radios2" name="radioSubComponent" plain v-model="selected">
+                <b-form-radio class="btnRadio" value="fr" v-on:change="changeLang" button-variant="outline-test">
+                    Fr <img src="images/flagFr.png"></b-form-radio>
+                <b-form-radio class="btnRadio" value="en" v-on:change="changeLang" button-variant="outline-test">En <img src="images/flagGB.png"></b-form-radio>
+            </b-form-radio-group>
+        </b-form-group>
     </div>
 </template>
 
@@ -12,7 +14,7 @@
     export default {
         name: "select-lang",
         data () {
-            return { langs: ['fr', 'en'] }
+            return { langs: ['fr', 'en'], selected:'fr' }
         },
         methods: {
             changeLang: function (value) {
@@ -23,17 +25,17 @@
 </script>
 
 <style scoped>
-    .custom-dropdown select {
-    width: 100%;
-    background-color: #08aeac;
-    color: #fff;
-    font-size: inherit;
-    padding: .5em;
-    padding-left: 5em;
-    border: 0;
-    margin: 0;
-    border-radius: 3px;
-    text-indent: 0.01px;
-    text-overflow: '';
-}
+    .btnRadio {
+        background-color:#08aeac;
+        border: none;
+        border-radius: 5px;
+        padding: 2%;
+    }
+    .btnRadio img {
+        width: 30px;
+        height: 30px;
+    }
+    .btn-test {
+        background-color:#021533;
+    }
 </style>

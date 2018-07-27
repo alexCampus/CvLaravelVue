@@ -5,7 +5,7 @@
       <h5 class="semiBold">{{ $t("home.title", getLang) }}</h5>
      <hr>
       <p>{{ $t("home.about", getLang) }}</p>
-      <b-alert show class="alert backgroundColor">E-Mail: <a href="mailto:alex.depem@hotmail.fr">alex.depem@hotmail.fr</a> / Phone <a href="tel:+33626254358">+33 6 26 25 43 58</a></b-alert>
+      <b-alert show class="alert backgroundColor">E-Mail: <a href="mailto:alex.depem@hotmail.fr">alex.depem@hotmail.fr</a> / {{ $t("home.phone", getLang) }} <a href="tel:+33626254358">+33 6 26 25 43 58</a></b-alert>
       <div class="socialIcons">
         <b-button target="_blank" href="https://www.linkedin.com/in/de-pembroke-alexandre/"><i class="fab fa-linkedin-in"></i></b-button>
         <b-button target="_blank" href="https://github.com/alexCampus"><i class="fab fa-github"></i></b-button>

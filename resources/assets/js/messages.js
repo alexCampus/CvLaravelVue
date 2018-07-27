@@ -10,7 +10,8 @@ export const MESSAGES = {
         home: {
             title: 'Web Developper Fullstack',
             welcome: 'Welcome, I am',
-            about: 'Passionate and autonomous, I like the developer\'s job for the challenges it brings. I appreciate the job well done and I am constantly looking for personal and professional improvement.'
+            about: 'Passionate and autonomous, I like the developer\'s job for the challenges it brings. I appreciate the job well done and I am constantly looking for personal and professional improvement.',
+            phone: 'Phone'
         },
         resume: {
             download: 'Download my Resume',
@@ -58,7 +59,8 @@ export const MESSAGES = {
         home: {
             title: 'Développeur Web Fullstack',
             welcome: 'Bienvenue, je suis ',
-            about: "Passionné et autonome, j'aime le metier de développeur pour les challenges que cela apporte. J'apprécie le travail bien fait et je suis en recherche constante d'amélioration personnelle et professionnelle."
+            about: "Passionné et autonome, j'aime le metier de développeur pour les challenges que cela apporte. J'apprécie le travail bien fait et je suis en recherche constante d'amélioration personnelle et professionnelle.",
+            phone: 'Téléphone'
         },
         resume: {
             download: 'Télécharger mon Cv',
