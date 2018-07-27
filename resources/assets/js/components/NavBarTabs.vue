@@ -1,16 +1,13 @@
 <template>
   <div class="navBar">
+    <select-lang @lang="getLang"></select-lang>
     <b-nav justified tabs>
-      <!--<b-row>-->
-        <!--<select-lang @lang="getLang"></select-lang>-->
         <b-nav-item @click="isActive('home')">
           <b-button :class="{'w-100' : true, 'bgColor': true , 'actif': this.isActif['home']}">{{ $t("navBar.home", lang) }}</b-button>
         </b-nav-item>
         <b-nav-item @click="isActive('resume')">
           <b-button :class="{'w-100' : true, 'bgColor': true , 'actif': this.isActif['resume']}">{{ $t("navBar.resume", lang) }}</b-button>
         </b-nav-item>
-      <!--</b-row>-->
-      <!--<b-row>-->
         <b-nav-item @click="isActive('skills')">
           <b-button :class="{'w-100' : true, 'bgColor': true , 'actif': this.isActif['skills']}">{{ $t("navBar.skills", lang) }}</b-button>
         </b-nav-item>
@@ -20,7 +17,6 @@
         <b-nav-item @click="isActive('contact')">
           <b-button :class="{'w-100' : true, 'bgColor': true , 'actif': this.isActif['contact']}">{{ $t("navBar.contact", lang) }}</b-button>
         </b-nav-item>
-      <!--</b-row>-->
     </b-nav>
   </div>
 </template>

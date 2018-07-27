@@ -54514,10 +54514,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'navBarTabs',
@@ -54563,6 +54559,8 @@ var render = function() {
     "div",
     { staticClass: "navBar" },
     [
+      _c("select-lang", { on: { lang: _vm.getLang } }),
+      _vm._v(" "),
       _c(
         "b-nav",
         { attrs: { justified: "", tabs: "" } },
@@ -55272,7 +55270,7 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, "\n.margin[data-v-534e0772] {\n  margin-top: 5%;\n  margin-bottom: 5%;\n}\n.line[data-v-534e0772] {\n  width: 100%;\n  border-top: #08aeac 1px dotted;\n}\n.hr[data-v-534e0772] {\n  border: 0;\n  height: 1px;\n  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));\n}\n.bgColor[data-v-534e0772] {\n  border:none;\n  background-color: #08aeac;\n  max-width: 45%;\n  -webkit-transition: ease-out 0.3s;\n  transition: ease-out 0.3s;\n}\n.bgColor[data-v-534e0772]:hover {\n  -webkit-box-shadow: inset 400px 0 0 0 #021533;\n          box-shadow: inset 400px 0 0 0 #021533;\n}\nh4[data-v-534e0772] {\n  font-weight: bold;\n  color: #08aeac;\n  margin-bottom: -12px;\n  border-left: solid #08aeac 5px;\n  padding-left: 3%;\n}\nh5[data-v-534e0772] {\n  font-weight: bold;\n}\nh6[data-v-534e0772] {\n  color: #a0a0a0;\n}\n.resumeContent[data-v-534e0772] {\n  border: double #dadada 8px;\n  padding: 2%;\n}\n", ""]);
+exports.push([module.i, "\n.margin[data-v-534e0772] {\n  margin-top: 5%;\n  margin-bottom: 5%;\n}\n.line[data-v-534e0772] {\n  width: 100%;\n  border-top: #08aeac 1px dotted;\n}\n.hr[data-v-534e0772] {\n  border: 0;\n  height: 1px;\n  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));\n}\n.bgColor[data-v-534e0772] {\n  border:none;\n  background-color: #08aeac;\n  max-width: 45%;\n  -webkit-transition: ease-out 0.3s;\n  transition: ease-out 0.3s;\n}\n.bgColor[data-v-534e0772]:hover {\n  -webkit-box-shadow: inset 400px 0 0 0 #021533;\n          box-shadow: inset 400px 0 0 0 #021533;\n}\nh4[data-v-534e0772] {\n  font-weight: bold;\n  color: #08aeac;\n  margin-bottom: -12px;\n  border-left: solid #08aeac 5px;\n  padding-left: 3%;\n}\nh5[data-v-534e0772] {\n  font-weight: bold;\n}\nh6[data-v-534e0772] {\n  color: #a0a0a0;\n}\n.resumeContent[data-v-534e0772] {\n  border: double #dadada 8px;\n  padding: 2%;\n}\n.overText[data-v-534e0772] {\n  white-space: normal;\n}\n", ""]);
 
 // exports
 
@@ -55373,7 +55371,7 @@ var render = function() {
         _c(
           "b-button",
           {
-            class: { "w-100": true, bgColor: true },
+            class: { "w-100": true, bgColor: true, overText: true },
             on: {
               click: function($event) {
                 _vm.download()
@@ -55389,8 +55387,7 @@ var render = function() {
         _c(
           "b-button",
           {
-            class: { "w-100": true, bgColor: true },
-            attrs: { href: "" },
+            class: { "w-100": true, bgColor: true, overText: true },
             on: {
               click: function($event) {
                 _vm.redirectToContact()
@@ -55578,7 +55575,7 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, "\n.margin[data-v-7e265c9e] {\n  margin-top: 5%;\n  margin-bottom: 5%;\n}\n.bold[data-v-7e265c9e] {\n  font-weight: 400;\n}\n.hr[data-v-7e265c9e] {\n  border: 0;\n  height: 1px;\n  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));\n}\n.imgCard[data-v-7e265c9e] {\n  margin-top: 5%;\n}\n", ""]);
+exports.push([module.i, "\n.margin[data-v-7e265c9e] {\n  margin-top: 5%;\n  margin-bottom: 5%;\n}\n.bold[data-v-7e265c9e] {\n  font-weight: 400;\n}\n.hr[data-v-7e265c9e] {\n  border: 0;\n  height: 1px;\n  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));\n}\n.imgCard[data-v-7e265c9e] {\n  margin-top: 5%;\n}\n.exampleWebSite[data-v-7e265c9e] {\n  margin-bottom: 1%;\n}\n", ""]);
 
 // exports
 
@@ -55801,6 +55798,7 @@ var render = function() {
             _c(
               "b-button",
               {
+                staticClass: "exampleWebSite",
                 attrs: {
                   href: "https://www.miss-pieces.com/",
                   target: "_blank",
@@ -55813,6 +55811,7 @@ var render = function() {
             _c(
               "b-button",
               {
+                staticClass: "exampleWebSite",
                 attrs: {
                   href: "https://www.croque-montagne.fr",
                   target: "_blank",
@@ -56770,7 +56769,7 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, "\n.btnRadio[data-v-7f4ab2be] {\n    background-color:#08aeac;\n    border: none;\n    border-radius: 5px;\n    padding: 2%;\n}\n.btnRadio img[data-v-7f4ab2be] {\n    width: 30px;\n    height: 30px;\n}\n.btn-test[data-v-7f4ab2be] {\n    background-color:#021533;\n}\n", ""]);
+exports.push([module.i, "\n.locale-changer[data-v-7f4ab2be] {\n    color: #fff;\n    margin-top:2%;\n}\n.btnRadio[data-v-7f4ab2be] {\n    background-color:#08aeac;\n    border: none;\n    border-radius: 5px;\n    padding: 2%;\n}\n.btnRadio img[data-v-7f4ab2be] {\n    width: 30px;\n    height: 30px;\n}\n.btn-test[data-v-7f4ab2be] {\n    background-color:#021533;\n}\n@media screen and (max-width: 1024px) {\n.btnRadio[data-v-7f4ab2be] {\n        width: 20%;\n        height: 50px;\n}\n}\n", ""]);
 
 // exports
 
@@ -56821,7 +56820,6 @@ var render = function() {
     [
       _c(
         "b-form-group",
-        { attrs: { label: "Langage" } },
         [
           _c(
             "b-form-radio-group",

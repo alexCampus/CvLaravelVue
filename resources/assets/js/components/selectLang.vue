@@ -1,6 +1,6 @@
 <template>
     <div class="locale-changer">
-        <b-form-group label="Langage">
+        <b-form-group>
             <b-form-radio-group id="radios2" name="radioSubComponent" plain v-model="selected">
                 <b-form-radio class="btnRadio" value="fr" v-on:change="changeLang" button-variant="outline-test">
                     Fr <img src="images/flagFr.png"></b-form-radio>
@@ -25,6 +25,10 @@
 </script>
 
 <style scoped>
+    .locale-changer {
+        color: #fff;
+        margin-top:2%;
+    }
     .btnRadio {
         background-color:#08aeac;
         border: none;
@@ -37,5 +41,11 @@
     }
     .btn-test {
         background-color:#021533;
+    }
+    @media screen and (max-width: 1024px) {
+        .btnRadio {
+            width: 20%;
+            height: 50px;
+        }
     }
 </style>

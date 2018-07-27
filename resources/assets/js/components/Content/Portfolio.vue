@@ -46,8 +46,8 @@
           <p class="card-text">
               <em>{{$t('portfolio.cardSolo', lang)}}</em>
           </p>
-          <b-button href="https://www.miss-pieces.com/" target="_blank" variant="info">{{$t('portfolio.exampleLink', lang)}}</b-button>
-          <b-button href="https://www.croque-montagne.fr" target="_blank" variant="info">{{$t('portfolio.exampleLink', lang)}}</b-button>
+          <b-button href="https://www.miss-pieces.com/" target="_blank" variant="info" class="exampleWebSite">{{$t('portfolio.exampleLink', lang)}}</b-button>
+          <b-button href="https://www.croque-montagne.fr" target="_blank" variant="info" class="exampleWebSite">{{$t('portfolio.exampleLink', lang)}}</b-button>
         </b-card>
       </div>
     </b-container>
@@ -74,5 +74,8 @@
   }
   .imgCard {
     margin-top: 5%;
+  }
+  .exampleWebSite {
+    margin-bottom: 1%;
   }
 </style>

@@ -3,8 +3,8 @@
     <h2 class="bold text-left">{{ $t("navBar.resume", lang) }}</h2>
     <hr class="hr">
     <div class="margin">
-      <b-button :class="{'w-100' : true, 'bgColor': true}" v-on:click="download()"><i class="fas fa-download"></i> {{ $t("resume.download", lang) }}</b-button>
-      <b-button href="" :class="{'w-100' : true, 'bgColor': true}" v-on:click="redirectToContact()"><i class="fas fa-envelope"></i> {{ $t("resume.contact", lang) }}</b-button>
+      <b-button :class="{'w-100' : true, 'bgColor': true, 'overText': true}" v-on:click="download()"><i class="fas fa-download"></i> {{ $t("resume.download", lang) }}</b-button>
+      <b-button :class="{'w-100' : true, 'bgColor': true, 'overText': true}" v-on:click="redirectToContact()"><i class="fas fa-envelope"></i> {{ $t("resume.contact", lang) }}</b-button>
     </div>
 
     <div class="margin">
@@ -108,5 +108,8 @@
   .resumeContent {
     border: double #dadada 8px;
     padding: 2%;
+  }
+  .overText {
+    white-space: normal;
   }
 </style>
