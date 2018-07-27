@@ -13,7 +13,7 @@
     <div class="margin text-left">
       <h5><i class="fas fa-phone-square"></i> {{ $t("contact.phone", lang) }}</h5>
       <hr class="line">
-      <p><a href="tel:+33626254358">+33 6 26 25 43 58</a></p>
+      <p><a href="tel:+33626254358"><u>+33 6 26 25 43 58</u></a></p>
     </div>
     <div class="margin text-left">
       <h5><i class="fas fa-envelope"></i> {{ $t("contact.mail", lang) }}</h5>
@@ -92,7 +92,7 @@
     margin-bottom: -12px;
   }
   a {
-    text-underline-color: #08aeac;
+    text-decoration: underline;
     color: #000;
   }
   a:hover {

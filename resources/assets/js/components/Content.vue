@@ -59,11 +59,11 @@
     overflow-y: scroll;
     max-height: 580px;
   }
-  @media screen and (min-width: 1530px) and (max-width: 1820px) {
-    .content {
-      max-height: 680px;
-    }
-  }
+  /*@media screen and (min-width: 1530px) and (max-width: 1820px) {*/
+    /*.content {*/
+      /*max-height: 680px;*/
+    /*}*/
+  /*}*/
   @media screen and (min-width: 1250px) and (max-width: 1529px) {
     .content {
       max-height: 740px;

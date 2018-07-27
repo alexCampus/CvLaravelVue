@@ -71,12 +71,12 @@ export default {
   .isNavBarTabs {
     display: none;
   }
-  @media screen and (min-width: 1530px) and (max-width: 1820px) {
-      #site {
-        max-height: 680px;
-        margin-top: 5%;
-      }
-  }
+  /*@media screen and (min-width: 1530px) and (max-width: 1820px) {*/
+      /*#site {*/
+        /*max-height: 680px;*/
+        /*margin-top: 5%;*/
+      /*}*/
+  /*}*/
   @media screen and (min-width: 1250px) and (max-width: 1529px) {
       #site {
         max-height: 740px;

@@ -82,11 +82,11 @@
     width: 95%;
     margin: auto;
   }
-  @media screen and (min-width: 1530px) and (max-width: 1820px) {
-      #home {
-          max-height: 680px;
-      }
-  }
+  /*@media screen and (min-width: 1530px) and (max-width: 1820px) {*/
+      /*#home {*/
+          /*max-height: 680px;*/
+      /*}*/
+  /*}*/
   @media screen and (min-width: 1250px) and (max-width: 1529px) {
       #home {
           max-height: 740px;
