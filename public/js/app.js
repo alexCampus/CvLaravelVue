@@ -56414,7 +56414,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
         sendForm: function sendForm() {
             var self = this;
-            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(window.location.href + '/contact', this.contactInfo).then(function (res) {
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(window.location.href + 'contact', this.contactInfo).then(function (res) {
                 self.returnForm = res.data;
             }).catch(function (err) {
                 console.log('erreur', err);

@@ -57,7 +57,7 @@
         methods: {
           sendForm: function () {
               var self = this;
-              axios.post(window.location.href + '/contact', this.contactInfo).then( function (res) {
+              axios.post(window.location.href + 'contact', this.contactInfo).then( function (res) {
                  self.returnForm = res.data
               }).catch( function (err) {
                   console.log('erreur', err)
