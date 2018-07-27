@@ -57,7 +57,7 @@
         methods: {
           sendForm: function () {
               var self = this;
-              axios.post('http://localhost:8000/api/contact', this.contactInfo).then( function (res) {
+              axios.post('https://laravel-vuejs-cv.herokuapp.com/contact', this.contactInfo).then( function (res) {
                  self.returnForm = res.data
               }).catch( function (err) {
                   console.log('erreur', err)
