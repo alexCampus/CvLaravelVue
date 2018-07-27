@@ -19,16 +19,16 @@ class HomeController extends Controller
 
     public function contact(Request $request)
     {
-        $name  = $request->name;
-        $sujet = $request->sujet;
-        $email = $request->email;
-        $msg   = $request->message;
-
-        Mail::send('email.sendContact', ['name' => $name, 'sujet' => $sujet, 'email' => $email, 'msg' => $msg], function ($message) {
-            $message->from('admin@lelabobois.fr', 'Site Cv Alex');
-            $message->to('alex.depem@gmail.com');
-            $message->subject('Prise de contact Cv Alex');
-        });
+//        $name  = $request->name;
+//        $sujet = $request->sujet;
+//        $email = $request->email;
+//        $msg   = $request->message;
+//
+//        Mail::send('email.sendContact', ['name' => $name, 'sujet' => $sujet, 'email' => $email, 'msg' => $msg], function ($message) {
+//            $message->from('admin@lelabobois.fr', 'Site Cv Alex');
+//            $message->to('alex.depem@gmail.com');
+//            $message->subject('Prise de contact Cv Alex');
+//        });
        return 'Ok';
     }
 }
