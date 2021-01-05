@@ -2,17 +2,17 @@
     <b-container class="margin">
       <h2 class="bold text-left">{{$t('navBar.portfolio', lang)}}</h2>
       <hr class="hr">
-      <div class="imgCard">
-        <b-card title="Le Labo Bois"
-                img-src="images/lelabobois.png"
-                img-alt="Image"
-                img-bottom>
-          <p class="card-text">
-            <em>{{$t('portfolio.cardLeLaboBois', lang)}}</em>
-          </p>
-          <b-button href="http://www.lelabobois.fr" target="_blank" variant="info">{{$t('portfolio.buttonLink', lang)}}</b-button>
-        </b-card>
-      </div>
+<!--      <div class="imgCard">-->
+<!--        <b-card title="Le Labo Bois"-->
+<!--                img-src="images/lelabobois.png"-->
+<!--                img-alt="Image"-->
+<!--                img-bottom>-->
+<!--          <p class="card-text">-->
+<!--            <em>{{$t('portfolio.cardLeLaboBois', lang)}}</em>-->
+<!--          </p>-->
+<!--          <b-button href="http://www.lelabobois.fr" target="_blank" variant="info">{{$t('portfolio.buttonLink', lang)}}</b-button>-->
+<!--        </b-card>-->
+<!--      </div>-->
 
       <div class="imgCard">
         <b-card title="La Banda Tujumi"
