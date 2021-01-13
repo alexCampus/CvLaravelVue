@@ -57,7 +57,7 @@
     min-width: 45%;
     background-color: #f0f0f0;
     overflow-y: scroll;
-    max-height: 580px;
+    max-height: 655px;
   }
   /*@media screen and (min-width: 1530px) and (max-width: 1820px) {*/
     /*.content {*/
@@ -66,7 +66,7 @@
   /*}*/
   @media screen and (min-width: 1250px) and (max-width: 1529px) {
     .content {
-      max-height: 740px;
+      max-height: 690px;
     }
   }
   @media screen and (min-width: 1025px) and (max-width: 1249px) {
@@ -78,9 +78,9 @@
   @media screen and (max-width: 1024px) {
     .content {
       width: 100%;
-      max-height: 750px;
+      max-height: 85%;
       padding-bottom: 1%;
-      margin-bottom: 3%;
+      /*margin-bottom: 3%;*/
       margin-left: 0.5%;
     }
   }

@@ -15,12 +15,12 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('app', require('./components/App.vue'));
-Vue.component('NavBar', require('./components/NavBar.vue'));
-Vue.component('NavBarTabs', require('./components/NavBarTabs.vue'));
-Vue.component('Home', require('./components/Home.vue'));
-Vue.component('Content', require('./components/Content.vue'));
-Vue.component('SelectLang', require('./components/selectLang.vue'));
+Vue.component('app', require('./components/App.vue').default);
+Vue.component('NavBar', require('./components/NavBar.vue').default);
+Vue.component('NavBarTabs', require('./components/NavBarTabs.vue').default);
+Vue.component('Home', require('./components/Home.vue').default);
+Vue.component('Content', require('./components/Content.vue').default);
+Vue.component('SelectLang', require('./components/selectLang.vue').default);
 import BootstrapVue from 'bootstrap-vue'
 import VueI18n from 'vue-i18n'
 import {MESSAGES} from './messages.js';

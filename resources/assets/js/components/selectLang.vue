@@ -49,7 +49,7 @@ export default {
 
 @media screen and (max-width: 1024px) {
     .btnRadio {
-        width: 20%;
+        /*width: 20%;*/
         height: 50px;
     }
 }

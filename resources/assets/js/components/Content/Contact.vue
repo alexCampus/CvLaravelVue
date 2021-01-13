@@ -76,9 +76,9 @@ export default {
     margin-top: 5%;
 }
 
-.marginBottom {
-    margin-bottom: 3%;
-}
+/*.marginBottom {*/
+/*    margin-bottom: 3%;*/
+/*}*/
 
 .bold {
     font-weight: 400;

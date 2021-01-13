@@ -17,7 +17,7 @@
 </script>
 
 <style scoped>
-.profileImg {
-  margin-top: 5%;
-}
+/*.profileImg {*/
+/*  margin-top: 5%;*/
+/*}*/
 </style>

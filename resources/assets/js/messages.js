@@ -19,6 +19,40 @@ export const MESSAGES = {
             education: 'Education',
             work: 'Work Experience',
             skills: 'Professional Skills',
+            campusTitle: 'Developer',
+            campusName: 'Digital Campus / Grenoble / October 2016 - March 2018',
+            campusContent1: 'Technician Developer training at the Digital Campus.',
+            campusContent2: 'Intensive 6-month training on basic languages (HTML, CSS, JS, PHP, MYSQL, JAVA) followed by a 12-month work-study program in a company.',
+            workExp1:{
+                title1: 'Independent Teacher',
+                subTitle1:'Digital Campus / Grenoble / January 2019 - Today',
+                content1:'I work as a teacher at the Digital Campus on the modules:',
+                modContent1: 'System & Networks'
+            },
+            workExp2:{
+                title1: 'Fullstack Developer',
+                subTitle1:'Allibert Trekking / Grenoble / August 2018 - Today',
+                content1:'I am a web developer in the IT Department of Allibert Trekking. I work on the company\'s intranet system in PHP / Postgresql and I set up new development under Laravel.',
+                content2: 'I carry out project management as well as the implementation of development and CI processes with Gitlab.',
+            },
+            workExp3:{
+                title1: 'Fullstack Developer',
+                subTitle1:'Eolas / Grenoble / April 2018 - August 2018',
+                content1:'Web developer within the Eolas group, I participated in various projects for the company in Symfony, VueJS and NodeJS.',
+                content2: 'I had the chance to follow the projects to which I was assigned during my work-study program, which were platforms for municipalities or e-commerce.',
+            },
+            workExp4:{
+                title1: 'Apprentice Developer',
+                subTitle1:'Eolas / Grenoble / March 2017 - March 2018',
+                content1:'I did my work-study program at Eolas, which allowed me to see different projects of different sizes.',
+                content2:'I became independent on the Symfony and Laravel framework as well as improving myself on my business and project management processes.',
+            },
+            skill:{
+                content1: 'Curious',
+                content2: 'Autonomous',
+                content3: 'Dynamic',
+                content4: 'Enterprising',
+            }
         },
         contact: {
             adress: 'Adress',
@@ -71,6 +105,40 @@ export const MESSAGES = {
             education: 'Cursus Scolaire',
             work: 'Experience Professionnelle',
             skills: 'Compétences Professionnelles',
+            campusTitle: 'Technicien Développeur',
+            campusName: 'Campus Numérique / Grenoble / Octobre 2016 - Mars 2018',
+            campusContent1: 'Formation de Technicien Développeur au Campus Numérique.',
+            campusContent2: 'Formation intensive de 6 mois sur les languages de base (HTML, CSS, JS, PHP, MYSQL, JAVA) suivie d\'une alternance de 12 mois en entreprise.',
+            workExp1:{
+                title1: 'Formateur Indépendant',
+                subTitle1:'Campus Numérique / Grenoble / Janvier 2019 - Aujourd\'hui',
+                content1:'J\'interviens comme formateur au Campus Numérique sur les modules :',
+                modContent1: 'Système & Réseaux',
+            },
+            workExp2:{
+                title1: 'Développeur Fullstack',
+                subTitle1:'Allibert Trekking / Grenoble / Août 2018 - Aujourd\'hui',
+                content1:'Je suis développeur web au sein du Service Informatique d\'Allibert Trekking. J\'interviens sur le système intranet de l\'entreprise en PHP / Postgresql et j\'ai mis en place de nouveaux développement sous Laravel.',
+                content2: 'J\'effectue de la gestion de projet ainsi que de la mise en place de process de développement et CI grâce à Gitlab.',
+            },
+            workExp3:{
+                title1: 'Développeur Fullstack',
+                subTitle1:'Eolas / Grenoble / Avril 2018 - Août 2018',
+                content1:'Développeur web au sein du groupe Eolas, j\'ai participé à différents projets à destination de l\'entreprise en Symfony, VueJS et NodeJS.',
+                content2: 'J\'ai eu la chance de suivre les projets auxquels j\'étais affectés pendant mon alternance qui étaient des plateformes pour les municipalités ou bien des e-commerces.',
+            },
+            workExp4:{
+                title1: 'Apprenti Développeur',
+                subTitle1:'Eolas / Grenoble / Mars 2017 - Mars 2018',
+                content1:'J\'ai effectué mon alternance chez Eolas, ce qui m\'a permis de voir différents projets de différentes envergures.',
+                content2:'J\'ai ainsi pu devenir autonome sur le framework Symfony et Laravel ainsi que m\'améliorer sur mes process d\'entreprises et de gestion de projets.',
+            },
+            skill:{
+                content1: 'Curieux',
+                content2: 'Autonome',
+                content3: 'Dynamique',
+                content4: 'Entreprenant',
+            }
         },
         contact: {
             adress: 'Adresse',
