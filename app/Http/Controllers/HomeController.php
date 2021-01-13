@@ -25,7 +25,7 @@ class HomeController extends Controller
         $msg   = $request->message;
 
         Mail::send('email.sendContact', ['name' => $name, 'sujet' => $sujet, 'email' => $email, 'msg' => $msg], function ($message) {
-            $message->from('admin@lelabobois.fr', 'Site Cv Alex');
+            $message->from('alex.depem@hotmail.fr', 'Site Cv Alex');
             $message->to('alex.depem@gmail.com');
             $message->subject('Prise de contact Cv Alex');
         });
