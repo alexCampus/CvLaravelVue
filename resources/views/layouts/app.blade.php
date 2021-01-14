@@ -4,7 +4,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Primary Meta Tags -->
+    <title>CV Alexandre De Pembroke</title>
+    <meta name="title" content="CV_Alexandre_De_Pembroke">
+    <meta name="description" content="Cv de presentation de Monsieur Alexandre De Pembroke">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexandre.depembroke.fr/">
+    <meta property="og:title" content="CV_Alexandre_De_Pembroke">
+    <meta property="og:description" content="Cv de presentation de Monsieur Alexandre De Pembroke">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alexandre.depembroke.fr/">
+    <meta property="twitter:title" content="CV_Alexandre_De_Pembroke">
+    <meta property="twitter:description" content="Cv de presentation de Monsieur Alexandre De Pembroke">
+    <meta property="twitter:image" content="">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
