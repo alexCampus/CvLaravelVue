@@ -38,7 +38,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/favicon/favicon-16x16.png',true)}}">
     <link rel="manifest" href="{{asset('images/favicon/manifest.json',true)}}">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="{{asset('images/favicon/ms-icon-144x144.png', true}}">
+    <meta name="msapplication-TileImage" content="{{asset('images/favicon/ms-icon-144x144.png', true)}}">
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
