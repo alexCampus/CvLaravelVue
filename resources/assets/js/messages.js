@@ -96,7 +96,7 @@ export const MESSAGES = {
         home: {
             title: 'Développeur Web Fullstack',
             welcome: 'Bienvenue, je suis ',
-            about: 'Passionné et autonome, j\'aime le metier de développeur pour les challenges que cela apporte. J\'apprécie le travail bien fait et je suis en recherche constante d\'amélioration personnelle et professionnelle.',
+            about: 'Passionné et autonome, j\'aime le metier de développeur pour les challenges que cela apportent. J\'apprécie le travail bien fait et je suis en recherche constante d\'amélioration personnelle et professionnelle.',
             phone: 'Téléphone',
         },
         resume: {

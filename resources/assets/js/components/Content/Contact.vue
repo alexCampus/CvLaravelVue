@@ -23,7 +23,7 @@
             <hr class="line">
             <p><a href="mailto:alex.depem@hotmail.fr">alex.depem@hotmail.fr</a></p>
         </div>
-        <div class="margin text-left">
+        <div class="margin text-left mb-5">
             <h5><i class="fas fa-paper-plane"></i> {{ $t('contact.msg', lang) }}</h5>
             <hr class="line">
             <b-form @submit.prevent="sendForm" v-if="returnForm === ''">
