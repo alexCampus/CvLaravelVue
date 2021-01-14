@@ -14,14 +14,14 @@
     <meta property="og:url" content="https://alexandre.depembroke.fr/">
     <meta property="og:title" content="CV_Alexandre_De_Pembroke">
     <meta property="og:description" content="Cv de presentation de Monsieur Alexandre De Pembroke">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="{{asset('images/profil.jpg', true)}}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://alexandre.depembroke.fr/">
     <meta property="twitter:title" content="CV_Alexandre_De_Pembroke">
     <meta property="twitter:description" content="Cv de presentation de Monsieur Alexandre De Pembroke">
-    <meta property="twitter:image" content="">
+    <meta property="twitter:image" content="{{asset('images/profil.jpg', true)}}">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
