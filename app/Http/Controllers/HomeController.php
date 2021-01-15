@@ -21,7 +21,7 @@ class HomeController extends Controller
     public function contact(Request $request)
     {
         $data   = [
-            "secret"   => "6LddVy0aAAAAACFjGhWyGgPC1VdaQ6KCJpPI66J2",
+            "secret"   => env('APP_KEY_RECATCHA'),
             'response' => $request->get('g-recaptcha-response')
         ];
         $verify = curl_init();

@@ -73,11 +73,13 @@ export default {
         },
         sendForm: function() {
             var self = this;
-            axios.post(window.location.href + 'api/contact', this.contactInfo).then(function(res) {
-                self.returnForm = res.data;
-            }).catch(function(err) {
-                console.log('erreur', err);
-            });
+            if (this.contactInfo.g_recaptcha_response !== null) {
+                axios.post(window.location.href + 'api/contact', this.contactInfo).then(function(res) {
+                    self.returnForm = res.data;
+                }).catch(function(err) {
+                    console.log('erreur', err);
+                });
+            }
         },
     },
 };
