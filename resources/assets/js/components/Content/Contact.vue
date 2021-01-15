@@ -34,8 +34,9 @@
                 <b-form-input type="text" name="sujet" required :placeholder="$t('contact.placeholder.subject', lang)" class="marginBottom" v-model="contactInfo.sujet">
                 </b-form-input>
                 <b-form-textarea :rows="3" name="message" required class="marginBottom" v-model="contactInfo.message"></b-form-textarea>
-<!--                <div class="g-recaptcha" data-sitekey="6LddVy0aAAAAAMf7w4hI7tuPJ456cmAeLTl7XJrm"></div>-->
-                <vue-recaptcha sitekey="6LddVy0aAAAAAMf7w4hI7tuPJ456cmAeLTl7XJrm" :loadRecaptchaScript="true"></vue-recaptcha>
+                <!--                <div class="g-recaptcha" data-sitekey="6LddVy0aAAAAAMf7w4hI7tuPJ456cmAeLTl7XJrm"></div>-->
+                <vue-recaptcha sitekey="6LddVy0aAAAAAMf7w4hI7tuPJ456cmAeLTl7XJrm" :loadRecaptchaScript="true" @verify="onVerify" @expired="onCaptchaExpired"
+                               ref="recaptcha"></vue-recaptcha>
                 <b-button type="submit" class="submit marginBottom">{{ $t('contact.submit', lang) }}</b-button>
             </b-form>
             <b-alert variant="success" show v-else>{{ $t('contact.returnForm', lang) }}</b-alert>
@@ -46,6 +47,7 @@
 <script>
 import axios from 'axios';
 import VueRecaptcha from 'vue-recaptcha';
+
 export default {
     name: 'Contact',
     props: ['lang'],
@@ -58,25 +60,16 @@ export default {
                 email: '',
                 sujet: '',
                 message: '',
-                g_recaptcha_response: ''
+                g_recaptcha_response: '',
             },
         };
     },
     methods: {
-        grecaptchaCallback: function() {
-
-            // reCAPTCHA sends a request for a token
-            var $this = this;
-            return new Promise(function (resolve, reject) {
-                if (grecaptcha.getResponse() !== "") {
-                    // If reCAPTCHA token is received, store it
-                    $this.contactInfo['g-recaptcha-response'] = grecaptcha.getResponse();
-                    // Send form data to the Form Handler
-                    // $this.sendForm();
-                }
-                grecaptcha.reset();
-            });
-
+        onVerify(response) {
+            this.contactInfo.g_recaptcha_response = response;
+        },
+        onCaptchaExpired: function() {
+            this.$refs.recaptcha.reset();
         },
         sendForm: function() {
             var self = this;
