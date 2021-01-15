@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Symfony\Component\HttpFoundation\Response;
 
 class HomeController extends Controller
 {
@@ -51,6 +52,6 @@ class HomeController extends Controller
             return $name . ' ' . $sujet . ' ' . $email . ' ' . $msg;
         }
 
-        return false;
+        return new Response(false);
     }
 }
