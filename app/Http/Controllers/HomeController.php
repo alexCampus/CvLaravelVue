@@ -22,7 +22,7 @@ class HomeController extends Controller
     {
         $data   = [
             "secret"   => env('APP_KEY_RECATCHA'),
-            'response' => $request->get('g-recaptcha-response')
+            'response' => $request->get('g_recaptcha_response')
         ];
         $verify = curl_init();
         curl_setopt($verify, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
