@@ -52,6 +52,6 @@ class HomeController extends Controller
             return $name . ' ' . $sujet . ' ' . $email . ' ' . $msg;
         }
 
-        return new Response(false);
+        return  \response()->json([false]);
     }
 }
