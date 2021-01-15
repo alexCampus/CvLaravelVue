@@ -35,7 +35,7 @@
                 </b-form-input>
                 <b-form-textarea :rows="3" name="message" required class="marginBottom" v-model="contactInfo.message"></b-form-textarea>
 <!--                <div class="g-recaptcha" data-sitekey="6LddVy0aAAAAAMf7w4hI7tuPJ456cmAeLTl7XJrm"></div>-->
-                <vue-recaptcha sitekey="6LddVy0aAAAAAMf7w4hI7tuPJ456cmAeLTl7XJrm" :loadRecaptchaScript="true"></vue-recaptcha>
+                <vue-recaptcha sitekey="6LddVy0aAAAAAMf7w4hI7tuPJ456cmAeLTl7XJrm" ></vue-recaptcha>
                 <b-button type="submit" class="submit marginBottom">{{ $t('contact.submit', lang) }}</b-button>
             </b-form>
             <b-alert variant="success" show v-else>{{ $t('contact.returnForm', lang) }}</b-alert>
