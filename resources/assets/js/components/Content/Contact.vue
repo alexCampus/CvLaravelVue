@@ -60,7 +60,7 @@ export default {
                 email: '',
                 sujet: '',
                 message: '',
-                g_recaptcha_response: '',
+                g_recaptcha_response: null,
             },
         };
     },
