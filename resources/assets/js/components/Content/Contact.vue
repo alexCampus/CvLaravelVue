@@ -34,6 +34,9 @@
                 <b-form-input type="text" name="sujet" required :placeholder="$t('contact.placeholder.subject', lang)" class="marginBottom" v-model="contactInfo.sujet">
                 </b-form-input>
                 <b-form-textarea :rows="3" name="message" required class="marginBottom" v-model="contactInfo.message"></b-form-textarea>
+                <div class="row control-group">
+                    <div class="g-recaptcha" data-sitekey="6LddVy0aAAAAAMf7w4hI7tuPJ456cmAeLTl7XJrm"></div>
+                </div>
                 <b-button type="submit" class="submit marginBottom">{{ $t('contact.submit', lang) }}</b-button>
             </b-form>
             <b-alert variant="success" show v-else>{{ $t('contact.returnForm', lang) }}</b-alert>

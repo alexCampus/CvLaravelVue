@@ -19,16 +19,38 @@ class HomeController extends Controller
 
     public function contact(Request $request)
     {
-        $name  = $request->name;
-        $sujet = $request->sujet;
-        $email = $request->email;
-        $msg   = $request->message;
+        $data   = [
+            "secret"   => "6LddVy0aAAAAACFjGhWyGgPC1VdaQ6KCJpPI66J2",
+            'response' => $request->get('g-recaptcha-response')
+        ];
+        $verify = curl_init();
+        curl_setopt($verify, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+        curl_setopt($verify, CURLOPT_POST, true);
+        curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
+        curl_setopt($verify, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($verify);
+        $response = json_decode($response);
 
-        Mail::send('email.sendContact', ['name' => $name, 'sujet' => $sujet, 'email' => $email, 'msg' => $msg], function ($message) {
-            $message->from('alex.depem@hotmail.fr', 'Site Cv Alex');
-            $message->to('alex.depem@gmail.com');
-            $message->subject('Prise de contact Cv Alex');
-        });
-       return $name . ' ' . $sujet . ' ' . $email . ' ' . $msg;
+        if ($response->success) {
+            $name  = $request->name;
+            $sujet = $request->sujet;
+            $email = $request->email;
+            $msg   = $request->message;
+
+            Mail::send(
+                'email.sendContact',
+                ['name' => $name, 'sujet' => $sujet, 'email' => $email, 'msg' => $msg],
+                function ($message) {
+                    $message->from('alex.depem@hotmail.fr', 'Site Cv Alex');
+                    $message->to('alex.depem@gmail.com');
+                    $message->subject('Prise de contact Cv Alex');
+                }
+            );
+
+            return $name . ' ' . $sujet . ' ' . $email . ' ' . $msg;
+        }
+
+        return false;
     }
 }
