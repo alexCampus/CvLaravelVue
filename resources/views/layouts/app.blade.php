@@ -57,7 +57,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{asset('images/favicon/ms-icon-144x144.png', env('APP_HTTPS'))}}">
     <meta name="theme-color" content="#ffffff">
-    <script src="https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit" async defer>
+{{--    <script src="https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit" async defer>--}}
     </script>
 </head>
 <body>

@@ -35,7 +35,7 @@
                 </b-form-input>
                 <b-form-textarea :rows="3" name="message" required class="marginBottom" v-model="contactInfo.message"></b-form-textarea>
 <!--                <div class="g-recaptcha" data-sitekey="6LddVy0aAAAAAMf7w4hI7tuPJ456cmAeLTl7XJrm"></div>-->
-                <vue-recaptcha sitekey="6LddVy0aAAAAAMf7w4hI7tuPJ456cmAeLTl7XJrm" ></vue-recaptcha>
+                <vue-recaptcha sitekey="6LddVy0aAAAAAMf7w4hI7tuPJ456cmAeLTl7XJrm" :loadRecaptchaScript="true"></vue-recaptcha>
                 <b-button type="submit" class="submit marginBottom">{{ $t('contact.submit', lang) }}</b-button>
             </b-form>
             <b-alert variant="success" show v-else>{{ $t('contact.returnForm', lang) }}</b-alert>
@@ -58,10 +58,26 @@ export default {
                 email: '',
                 sujet: '',
                 message: '',
+                g_recaptcha_response: ''
             },
         };
     },
     methods: {
+        grecaptchaCallback: function() {
+
+            // reCAPTCHA sends a request for a token
+            var $this = this;
+            return new Promise(function (resolve, reject) {
+                if (grecaptcha.getResponse() !== "") {
+                    // If reCAPTCHA token is received, store it
+                    $this.contactInfo['g-recaptcha-response'] = grecaptcha.getResponse();
+                    // Send form data to the Form Handler
+                    // $this.sendForm();
+                }
+                grecaptcha.reset();
+            });
+
+        },
         sendForm: function() {
             var self = this;
             axios.post(window.location.href + 'api/contact', this.contactInfo).then(function(res) {
