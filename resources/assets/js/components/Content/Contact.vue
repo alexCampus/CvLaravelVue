@@ -5,24 +5,24 @@
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90008.9023757139!2d5.707518765787686!3d45.171341145662275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a5ec8da794b57%3A0x42c2d8debaacfb4e!2s38420%20Le%20Versoud!5e0!3m2!1sfr!2sfr!4v1609860005676!5m2!1sfr!2sfr"
             width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <div class="margin text-left">
-            <h5><i class="fas fa-map-marked-alt"></i> {{ $t('contact.adress', lang) }}</h5>
-            <hr class="line">
-            <address>250 Rue Compagnie Stéphane<br>
-                38420 Le Versoud<br>
-                France
-            </address>
-        </div>
-        <div class="margin text-left">
-            <h5><i class="fas fa-phone-square"></i> {{ $t('contact.phone', lang) }}</h5>
-            <hr class="line">
-            <p><a href="tel:+33626254358"><u>+33 6 26 25 43 58</u></a></p>
-        </div>
-        <div class="margin text-left">
-            <h5><i class="fas fa-envelope"></i> {{ $t('contact.mail', lang) }}</h5>
-            <hr class="line">
-            <p><a href="mailto:alex.depem@hotmail.fr">alex.depem@hotmail.fr</a></p>
-        </div>
+<!--        <div class="margin text-left">-->
+<!--            <h5><i class="fas fa-map-marked-alt"></i> {{ $t('contact.adress', lang) }}</h5>-->
+<!--            <hr class="line">-->
+<!--            <address>250 Rue Compagnie Stéphane<br>-->
+<!--                38420 Le Versoud<br>-->
+<!--                France-->
+<!--            </address>-->
+<!--        </div>-->
+<!--        <div class="margin text-left">-->
+<!--            <h5><i class="fas fa-phone-square"></i> {{ $t('contact.phone', lang) }}</h5>-->
+<!--            <hr class="line">-->
+<!--            <p><a href="tel:+33626254358"><u>+33 6 26 25 43 58</u></a></p>-->
+<!--        </div>-->
+<!--        <div class="margin text-left">-->
+<!--            <h5><i class="fas fa-envelope"></i> {{ $t('contact.mail', lang) }}</h5>-->
+<!--            <hr class="line">-->
+<!--            <p><a href="mailto:alex.depem@hotmail.fr">alex.depem@hotmail.fr</a></p>-->
+<!--        </div>-->
         <div class="margin text-left mb-5">
             <h5><i class="fas fa-paper-plane"></i> {{ $t('contact.msg', lang) }}</h5>
             <hr class="line">
