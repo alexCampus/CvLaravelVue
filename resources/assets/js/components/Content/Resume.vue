@@ -91,12 +91,12 @@ export default {
     methods: {
         download: function() {
             var element = document.createElement('a');
-            element.setAttribute('href', '/images/Cv.pdf');
+            element.setAttribute('href', '/images/CV.pdf');
             element.setAttribute('download', 'Alexandre_De_Pembroke_CV');
             element.style.display = 'none';
             document.body.appendChild(element);
             element.click();
-            // document.body.removeChild(element);
+            document.body.removeChild(element);
         },
         redirectToContact: function() {
             this.$emit('redirect', 'contact');
