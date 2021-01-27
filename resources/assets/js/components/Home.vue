@@ -11,8 +11,6 @@
 
         </div>
         <div class="socialIcons card-footer">
-<!--            <b-alert show class="alert backgroundColor">E-Mail: <a href="mailto:alex.depem@hotmail.fr">alex.depem@hotmail.fr</a> / {{ $t('home.phone', getLang) }} <a-->
-<!--                href="tel:+33626254358">+33 6 26 25 43 58</a></b-alert>-->
             <b-button target="_blank" href="https://www.linkedin.com/in/de-pembroke-alexandre/"><i class="fab fa-linkedin-in"></i></b-button>
             <b-button target="_blank" href="https://github.com/alexCampus"><i class="fab fa-github"></i></b-button>
         </div>
