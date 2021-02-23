@@ -91,7 +91,7 @@ export default {
     methods: {
         download: function() {
             var element = document.createElement('a');
-            element.setAttribute('href', '/images/CV.pdf');
+            element.setAttribute('href', '/images/CV.jpg');
             element.setAttribute('download', 'Alexandre_De_Pembroke_CV');
             element.style.display = 'none';
             document.body.appendChild(element);

@@ -44,7 +44,7 @@ class HomeController extends Controller
                 ['name' => $name, 'sujet' => $sujet, 'email' => $email, 'msg' => $msg],
                 function ($message) {
                     $message->from('alex.depem@hotmail.fr', 'Site Cv Alex');
-                    $message->to('alex.depem@gmail.com');
+                    $message->to('alexandre@depembroke.fr');
                     $message->subject('Prise de contact Cv Alex');
                 }
             );

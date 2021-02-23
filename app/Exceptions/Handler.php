@@ -4,6 +4,7 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\Mail;
 
 class Handler extends ExceptionHandler
 {
@@ -34,6 +35,15 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $exception)
     {
+        if ($this->shouldReport($exception)) {
+            // emails.exception is the template of your email
+            // it will have access to the $error that we are passing below
+            Mail::send('email.exception', ['error' => $exception], function ($m) {
+                $m->from('alex.depem@gmail.com', 'CV');
+                $m->to('support@depembroke.fr', 'CV');
+                $m->subject('Error site CV');
+            });
+        }
         parent::report($exception);
     }
 
